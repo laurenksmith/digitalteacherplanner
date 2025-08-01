@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/TeacherPlanner.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/events_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/[other generated pages]" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/planner_example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/weekly_example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planner_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/cover_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/monthly_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/planner_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/weekly_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/yearly_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/generator.py" afterDir="false" />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Everything I have created for my teacher planner to this point. Still a lot to do, but I have the beginnings!">
+      <change afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +41,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.generator.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
   <component name="RunManager">
@@ -102,9 +84,20 @@
       <option name="presentableId" value="Default" />
       <updated>1751536518177</updated>
     </task>
+    <task id="LOCAL-00001" summary="Everything I have created for my teacher planner to this point. Still a lot to do, but I have the beginnings!">
+      <option name="closed" value="true" />
+      <created>1754056686439</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1754056686439</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Everything I have created for my teacher planner to this point. Still a lot to do, but I have the beginnings!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything I have created for my teacher planner to this point. Still a lot to do, but I have the beginnings!" />
   </component>
 </project>

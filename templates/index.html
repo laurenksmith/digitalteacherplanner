@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Planner</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    form { margin-bottom: 30px; }
+    input, textarea { display: block; margin: 10px 0; width: 300px; }
+    .event { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h1>My Weekly Planner</h1>
+
+  <form method="POST" action="/add">
+    <input type="text" name="title" placeholder="Event title" required />
+    <input type="date" name="date" required />
+    <textarea name="notes" placeholder="Notes..."></textarea>
+    <button type="submit">Add Event</button>
+  </form>
+
+  <h2>Events</h2>
+  {% for event in events %}
+    <div class="event">
+      <strong>{{ event.title }}</strong><br>
+      <em>{{ event.date }}</em><br>
+      <p>{{ event.notes }}</p>
+    </div>
+  {% endfor %}
+</body>
+</html>
