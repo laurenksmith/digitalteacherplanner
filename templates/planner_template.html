@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Timetable – {{ date }}</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Weekly Timetable Planner</h1>
+    <h2>Week of: {{ date }}</h2>
+
+    <table border="1" cellspacing="0" cellpadding="6">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for slot in weekly_slots %}
+            <tr>
+                <td><strong>{{ slot }}</strong></td>
+                <td></td>  <!-- Monday -->
+                <td></td>  <!-- Tuesday -->
+                <td></td>  <!-- Wednesday -->
+                <td></td>  <!-- Thursday -->
+                <td></td>  <!-- Friday -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <footer>
+        <p>Created for {{ teacher_name }} | {{ school_name }}</p>
+    </footer>
+</body>
+</html>

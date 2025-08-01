@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Overview – {{ date }}</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Weekly Overview</h1>
+    <h2>Week of: {{ date }}</h2>
+
+    <h3>Events This Week:</h3>
+    <ul>
+        {% for event in events %}
+            <li><strong>{{ event.date }}</strong>: {{ event.title }}</li>
+        {% else %}
+            <li>No events this week.</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Due This Week:</h3>
+    <ul>
+        {% for task in due_this_week %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Due Next Week:</h3>
+    <ul>
+        {% for task in due_next_week %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+
+    <footer>
+        <p>Created for {{ teacher_name }} | {{ school_name }}</p>
+    </footer>
+</body>
+</html>

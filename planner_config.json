@@ -1,0 +1,20 @@
+{
+  "teacher_name": "Lauren Smith",
+  "school_name": "Sunrise Primary",
+  "term_dates": {
+    "start": "2025-09-02",
+    "end": "2026-07-17"
+  },
+  "weekly_slots": [
+    "08:30 - 09:00", "09:00 - 10:00", "10:00 - 10:45",
+    "11:00 - 12:00", "13:00 - 14:00", "14:15 - 15:15"
+  ],
+  "notes_sections": [
+    "Parent Meetings", "Child Notes", "Staff Meetings", "Other"
+  ],
+  "cover_preferences": {
+    "title": "My Teaching Year",
+    "font": "Comic Sans",
+    "background": "chalkboard.jpg"
+  }
+}
