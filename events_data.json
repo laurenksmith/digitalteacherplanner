@@ -1,7 +1,5 @@
-{
-  "events": [
-    { "date": "2025-10-03", "title": "Parent-Teacher Conference" },
-    { "date": "2025-12-15", "title": "Winter Play" },
-    { "date": "2026-05-01", "title": "Year 3 SATs" }
-  ]
-}
+[
+  { "date": "2025-10-03", "title": "Parent-Teacher Conference" },
+  { "date": "2025-12-15", "title": "Winter Play" },
+  { "date": "2026-05-01", "title": "Year 3 SATs" }
+]
