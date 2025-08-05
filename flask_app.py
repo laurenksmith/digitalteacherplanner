@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 DATA_FILE = 'events_data.json'
 
+
 # Load existing events or create empty list
 def load_events():
     if os.path.exists(DATA_FILE):
@@ -14,15 +15,18 @@ def load_events():
             return json.load(f)
     return []
 
+
 # Save events to file
 def save_events(events):
     with open(DATA_FILE, 'w') as f:
         json.dump(events, f, indent=2)
 
+
 @app.route('/')
 def index():
     events = load_events()
     return render_template('index.html', events=events)
+
 
 @app.route('/add', methods=['POST'])
 def add_event():
@@ -35,6 +39,7 @@ def add_event():
     events.append(new_event)
     save_events(events)
     return redirect(url_for('index'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)
