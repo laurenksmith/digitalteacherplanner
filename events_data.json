@@ -1,5 +1,8 @@
 [
-  { "date": "2025-10-03", "title": "Parent-Teacher Conference" },
-  { "date": "2025-12-15", "title": "Winter Play" },
-  { "date": "2026-05-01", "title": "Year 3 SATs" }
+  {
+    "id": "1e29a8a1-f666-4112-9b27-43a34689fbd1",
+    "title": "Go to the zoo",
+    "date": "2025-08-05",
+    "notes": "Going with my boyfriend"
+  }
 ]

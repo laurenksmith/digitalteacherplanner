@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Created an edit file" />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I've changed my events_data.json file to a list instead of a dictionary, as I got an error when I tried to add an event to my planner. This appears to be the cause.">
+      <change beforePath="$PROJECT_DIR$/events_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/events_data.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754412006655</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="I've changed my events_data.json file to a list instead of a dictionary, as I got an error when I tried to add an event to my planner. This appears to be the cause.">
+      <option name="closed" value="true" />
+      <created>1754412404833</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754412404833</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +151,7 @@
     <MESSAGE value="Updated my flask file to include the ability to edit and delete tasks" />
     <MESSAGE value="Updated my index file to include the edit and delete options." />
     <MESSAGE value="Created an edit file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created an edit file" />
+    <MESSAGE value="I've changed my events_data.json file to a list instead of a dictionary, as I got an error when I tried to add an event to my planner. This appears to be the cause." />
+    <option name="LAST_COMMIT_MESSAGE" value="I've changed my events_data.json file to a list instead of a dictionary, as I got an error when I tried to add an event to my planner. This appears to be the cause." />
   </component>
 </project>
