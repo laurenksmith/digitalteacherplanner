@@ -12,3 +12,46 @@ font-family: "Playwrite HU", cursive;
 .nav a i {
   margin: 0 6px;
 }
+
+/* === Weekly View Styles === */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+.day {
+  margin-bottom: 30px;
+}
+
+.event {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.nav {
+  margin: 20px 0;
+}
+
+.nav a {
+  margin: 0 10px;
+}
+
+.date-label {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+@media (max-width: 600px) {
+  .day {
+    margin-bottom: 20px;
+  }
+  .event {
+    font-size: 0.9em;
+  }
+}

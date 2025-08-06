@@ -1,70 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Weekly Planner</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-  <script src="https://kit.fontawesome.com/37bf3e2592.js" crossorigin="anonymous"></script>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    h1, h2 { margin-bottom: 10px; }
-    .day { margin-bottom: 30px; }
-    .event { border: 1px solid #ccc; padding: 10px; margin: 5px 0; border-radius: 5px; }
-    .nav { margin: 20px 0; }
-    .nav a { margin: 0 10px; }
-    .date-label { font-weight: bold; font-size: 1.1em; }
-    @media (max-width: 600px) {
-      .day { margin-bottom: 20px; }
-      .event { font-size: 0.9em; }
-    }
-  </style>
-</head>
-<body>
+{% extends "base.html" %}
 
-  <h1>Week of {{ start.strftime('%d %B %Y') }} – {{ end.strftime('%d %B %Y') }}</h1>
+{% block title %}Weekly Planner{% endblock %}
+
+{% block content %}
+<h1>Week of {{ start.strftime('%d %B %Y') }} – {{ end.strftime('%d %B %Y') }}</h1>
+
 {% if upcoming_tasks %}
-  <h2>Upcoming Tasks (Next Week)</h2>
-  <ul>
-    {% for task in upcoming_tasks %}
-      <li>
-        <strong>{{ task.title }}</strong> – {{ task.date }}
-        <br>{{ task.notes }}
-      </li>
-    {% endfor %}
-  </ul>
+    <h2>Upcoming Tasks (Next Week)</h2>
+    <ul>
+        {% for task in upcoming_tasks %}
+            <li>
+                <strong>{{ task.title }}</strong> – {{ task.date }}<br>
+                {{ task.notes }}
+            </li>
+        {% endfor %}
+    </ul>
 {% endif %}
 
- <div class="nav">
-  <a href="{{ url_for('week_view', date=(start - timedelta(days=7)).isoformat()) }}">
-    <i class="fas fa-arrow-left"></i> Previous Week
-  </a>
-  <a href="{{ url_for('week_redirect') }}">
-    <i class="fas fa-calendar-day"></i> This Week
-  </a>
-  <a href="{{ url_for('week_view', date=(start + timedelta(days=7)).isoformat()) }}">
-    Next Week <i class="fas fa-arrow-right"></i>
-  </a>
+<div class="nav">
+    <a href="{{ url_for('week_view', date=(start - timedelta(days=7)).isoformat()) }}">
+        <i class="fas fa-arrow-left"></i> Previous Week
+    </a>
+    <a href="{{ url_for('week_redirect') }}">
+        <i class="fas fa-calendar-day"></i> This Week
+    </a>
+    <a href="{{ url_for('week_view', date=(start + timedelta(days=7)).isoformat()) }}">
+        Next Week <i class="fas fa-arrow-right"></i>
+    </a>
 </div>
 
-  {% for date_str, events in week_events.items() %}
+{% for date_str, events in week_events.items() %}
     <div class="day">
-      <div class="date-label">{{ date_str | datetimeformat('%A, %d %B %Y') }}</div>
-      {% if events %}
-        {% for event in events %}
-          <div class="event">
-            <strong>{{ event.title }}</strong><br>
-            <small>{{ event.notes }}</small><br>
-            <a href="{{ url_for('edit_event', event_id=event.id) }}">Edit</a> |
-            <a href="{{ url_for('delete_event', event_id=event.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
-          </div>
-        {% endfor %}
-      {% else %}
-        <p>No events</p>
-      {% endif %}
+        <div class="date-label">{{ date_str | datetimeformat('%A, %d %B %Y') }}</div>
+        {% if events %}
+            {% for event in events %}
+                <div class="event">
+                    <strong>{{ event.title }}</strong><br>
+                    <small>{{ event.notes }}</small><br>
+                    <a href="{{ url_for('edit_event', event_id=event.id) }}">Edit</a> |
+                    <a href="{{ url_for('delete_event', event_id=event.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No events</p>
+        {% endif %}
     </div>
-  {% endfor %}
+{% endfor %}
 
-  <p><a href="{{ url_for('index') }}">Back to homepage</a></p>
+<p><a href="{{ url_for('index') }}">Back to homepage</a></p>
+{% endblock %}
 
-</body>
-</html>

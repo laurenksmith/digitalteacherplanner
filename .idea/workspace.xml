@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I've updated the font for the headings as well as the ability to see the events which will be coming up in the following week for the weekly planner.">
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/monthly_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/monthly_template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/weekly.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weekly.html" afterDir="false" />
-    </list>
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +178,23 @@
       <option name="project" value="LOCAL" />
       <updated>1754496907396</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="I've begun adjusting my code to include features like buttons, etc. However, I've looked up best practices, so I have now created a base.html file and am editing my current code as I go to reflect this!">
+      <option name="closed" value="true" />
+      <created>1754503780140</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1754503780140</updated>
+    </task>
+    <task id="LOCAL-00014" summary="I accidentally changed the wrong file! So this is (hopefully) the correct base file,">
+      <option name="closed" value="true" />
+      <created>1754503988726</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1754503988726</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +211,8 @@
     <MESSAGE value="Adding the ability to look at the week view (or a particular date in the week) as well as upcoming tasks in the following weeks." />
     <MESSAGE value="Experimenting with margin values" />
     <MESSAGE value="I've updated the font for the headings as well as the ability to see the events which will be coming up in the following week for the weekly planner." />
-    <option name="LAST_COMMIT_MESSAGE" value="I've updated the font for the headings as well as the ability to see the events which will be coming up in the following week for the weekly planner." />
+    <MESSAGE value="I've begun adjusting my code to include features like buttons, etc. However, I've looked up best practices, so I have now created a base.html file and am editing my current code as I go to reflect this!" />
+    <MESSAGE value="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
+    <option name="LAST_COMMIT_MESSAGE" value="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
   </component>
 </project>
