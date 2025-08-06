@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I've changed my events_data.json file to a list instead of a dictionary, as I got an error when I tried to add an event to my planner. This appears to be the cause.">
-      <change beforePath="$PROJECT_DIR$/events_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/events_data.json" afterDir="false" />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Committing my test edit :)">
+      <change afterPath="$PROJECT_DIR$/templates/weekly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +36,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.flask_app.executor": "Run",
-    "Python.generator.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.flask_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.generator.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="TeacherPlanner" />
@@ -140,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1754412404833</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="I removed the test data I added previously which did not include the id key">
+      <option name="closed" value="true" />
+      <created>1754412669849</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1754412669849</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Committing my test edit :)">
+      <option name="closed" value="true" />
+      <created>1754412726732</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1754412726732</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -152,6 +170,8 @@
     <MESSAGE value="Updated my index file to include the edit and delete options." />
     <MESSAGE value="Created an edit file" />
     <MESSAGE value="I've changed my events_data.json file to a list instead of a dictionary, as I got an error when I tried to add an event to my planner. This appears to be the cause." />
-    <option name="LAST_COMMIT_MESSAGE" value="I've changed my events_data.json file to a list instead of a dictionary, as I got an error when I tried to add an event to my planner. This appears to be the cause." />
+    <MESSAGE value="I removed the test data I added previously which did not include the id key" />
+    <MESSAGE value="Committing my test edit :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Committing my test edit :)" />
   </component>
 </project>
