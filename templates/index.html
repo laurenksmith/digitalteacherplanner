@@ -13,7 +13,7 @@
 </form>
 
 <div class="view-buttons">
-  <a href="{{ url_for('week_view', date=datetime.today().date().isoformat()) }}" class="btn">
+  <a href="{{ url_for('week_view', date=today_iso) }}" class="btn">
     <i class="fas fa-calendar-week"></i> Weekly View
   </a>
   <a href="{{ url_for('month_redirect') }}" class="btn">

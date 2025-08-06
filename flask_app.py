@@ -33,8 +33,9 @@ def save_events(events):
 
 @app.route('/')
 def index():
-    events = load_events()
-    return render_template('index.html', events=events)
+    events = Event.query.order_by(Event.date).all()
+    today_iso = datetime.today().date().isoformat()
+    return render_template('index.html', events=events, today_iso=today_iso)
 
 
 @app.route('/add', methods=['POST'])

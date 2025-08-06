@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Updated monthly_template.html file to reflect the use of the base file.">
-      <change afterPath="$PROJECT_DIR$/templates/yearly.html" afterDir="false" />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I have updated the flask_app.py and index.html files and created a yearly.html file too.">
       <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754505208957</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="I have updated the flask_app.py and index.html files and created a yearly.html file too.">
+      <option name="closed" value="true" />
+      <created>1754505875988</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1754505875988</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -235,6 +241,7 @@
     <MESSAGE value="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
     <MESSAGE value="Updated weekly and styles.css files to reflect the use of the base file." />
     <MESSAGE value="Updated monthly_template.html file to reflect the use of the base file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated monthly_template.html file to reflect the use of the base file." />
+    <MESSAGE value="I have updated the flask_app.py and index.html files and created a yearly.html file too." />
+    <option name="LAST_COMMIT_MESSAGE" value="I have updated the flask_app.py and index.html files and created a yearly.html file too." />
   </component>
 </project>
