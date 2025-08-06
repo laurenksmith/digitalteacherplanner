@@ -3,6 +3,8 @@
 <head>
   <title>Weekly Planner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="https://kit.fontawesome.com/37bf3e2592.js" crossorigin="anonymous"></script>
   <style>
     body { font-family: Arial, sans-serif; padding: 20px; }
     h1, h2 { margin-bottom: 10px; }
@@ -32,11 +34,17 @@
   </ul>
 {% endif %}
 
-  <div class="nav">
-    <a href="{{ url_for('week_view', date=(start - timedelta(days=7)).isoformat()) }}">← Previous Week</a>
-    <a href="{{ url_for('week_redirect') }}">This Week</a>
-    <a href="{{ url_for('week_view', date=(start + timedelta(days=7)).isoformat()) }}">Next Week →</a>
-  </div>
+ <div class="nav">
+  <a href="{{ url_for('week_view', date=(start - timedelta(days=7)).isoformat()) }}">
+    <i class="fas fa-arrow-left"></i> Previous Week
+  </a>
+  <a href="{{ url_for('week_redirect') }}">
+    <i class="fas fa-calendar-day"></i> This Week
+  </a>
+  <a href="{{ url_for('week_view', date=(start + timedelta(days=7)).isoformat()) }}">
+    Next Week <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
 
   {% for date_str, events in week_events.items() %}
     <div class="day">

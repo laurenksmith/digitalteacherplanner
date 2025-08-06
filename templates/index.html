@@ -1,35 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-  <title>Teacher Planner</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; margin: 0;}
-    form { margin-bottom: 30px; }
-    input, textarea { display: block; margin: 10px 0; width: 300px; }
-    .event { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
-  </style>
-</head>
-<body>
-  <h1>My Weekly Planner</h1>
+{% extends "base.html" %}
 
-  <form method="POST" action="/add">
+{% block title %}Teacher Planner{% endblock %}
+
+{% block content %}
+<h1>My Weekly Planner</h1>
+
+<form method="POST" action="/add">
     <input type="text" name="title" placeholder="Event title" required />
     <input type="date" name="date" required />
     <textarea name="notes" placeholder="Notes..."></textarea>
     <button type="submit">Add Event</button>
-  </form>
+</form>
 
-  <h2>Events</h2>
-  {% for event in events %}
+<div class="view-buttons">
+    <a href="{{ url_for('week_view', date=datetime.today().date().isoformat()) }}" class="btn">
+        <i class="fas fa-calendar-week"></i> Weekly View
+    </a>
+    <a href="{{ url_for('month_redirect') }}" class="btn">
+        <i class="fas fa-calendar-alt"></i> Monthly View
+    </a>
+    <!-- Year view not implemented yet -->
+</div>
+
+<h2>Events</h2>
+{% for event in events %}
     <div class="event">
-      <strong>{{ event.title }}</strong><br>
-      <em>{{ event.date }}</em><br>
-      <p>{{ event.notes }}</p>
-      <a href="{{ url_for('edit_event', event_id=event.id) }}">Edit</a> |
-      <a href="{{ url_for('delete_event', event_id=event.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
+        <strong>{{ event.title }}</strong><br>
+        <em>{{ event.date }}</em><br>
+        <p>{{ event.notes }}</p>
+        <a href="{{ url_for('edit_event', event_id=event.id) }}">Edit</a> |
+        <a href="{{ url_for('delete_event', event_id=event.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
     </div>
+{% endfor %}
 
-  {% endfor %}
-</body>
-</html>
+<p><a href="{{ url_for('month_redirect') }}">📅 View Monthly Calendar</a></p>
+{% endblock %}

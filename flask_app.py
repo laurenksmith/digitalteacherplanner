@@ -119,5 +119,51 @@ def week_view(date):
     )
 
 
+@app.route('/month')
+def month_redirect():
+    today = datetime.today().date()
+    return redirect(url_for('month_view', year=today.year, month=today.month))
+
+
+@app.route('/month/<int:year>/<int:month>')
+def month_view(year, month):
+    try:
+        start_of_month = datetime(year, month, 1).date()
+    except ValueError:
+        return "Invalid date", 400
+
+    # Get number of days in the month
+    if month == 12:
+        next_month = datetime(year + 1, 1, 1).date()
+    else:
+        next_month = datetime(year, month + 1, 1).date()
+    end_of_month = next_month - timedelta(days=1)
+
+    # Get calendar grid info
+    calendar_start = start_of_month - timedelta(days=start_of_month.weekday())  # Start from Monday
+    calendar_end = end_of_month + timedelta(days=(6 - end_of_month.weekday()))
+
+    # Collect events
+    events = load_events()
+    event_map = {}
+    for event in events:
+        try:
+            date = datetime.strptime(event['date'], '%Y-%m-%d').date()
+            if calendar_start <= date <= calendar_end:
+                event_map.setdefault(date.isoformat(), []).append(event)
+        except (KeyError, ValueError):
+            continue
+
+    return render_template(
+        'monthly_template.html',
+        year=year,
+        month=month,
+        calendar_start=calendar_start,
+        calendar_end=calendar_end,
+        event_map=event_map,
+        today=datetime.today().date()
+    )
+
+
 if __name__ == '__main__':
     app.run(debug=True)

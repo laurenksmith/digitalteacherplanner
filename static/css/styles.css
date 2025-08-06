@@ -4,3 +4,11 @@ h1, h2, h3 {
 color: #4a4a4a;
 font-family: "Playwrite HU", cursive;
 }
+
+.btn i {
+  margin-right: 8px;
+}
+
+.nav a i {
+  margin: 0 6px;
+}
