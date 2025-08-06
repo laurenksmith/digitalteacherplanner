@@ -155,6 +155,13 @@ def month_view(year, month):
         except (KeyError, ValueError):
             continue
 
+    # Create list of dates to render in the template
+    dates = []
+    date = calendar_start
+    while date <= calendar_end:
+        dates.append(date)
+        date += timedelta(days=1)
+
     return render_template(
         'monthly_template.html',
         year=year,
@@ -162,7 +169,8 @@ def month_view(year, month):
         calendar_start=calendar_start,
         calendar_end=calendar_end,
         event_map=event_map,
-        today=datetime.today().date()
+        today=datetime.today().date(),
+        dates=dates
     )
 
 

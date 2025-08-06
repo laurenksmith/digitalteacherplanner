@@ -22,8 +22,7 @@
     <div><strong>{{ ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][i] }}</strong></div>
   {% endfor %}
 
-  {% set date = calendar_start %}
-  {% while date <= calendar_end %}
+  {% for date in dates %}
     <div class="day {% if date == today %}today{% endif %}">
       <div><strong>{{ date.day }}</strong></div>
       {% if event_map[date.isoformat()] %}
@@ -33,7 +32,7 @@
       {% endif %}
     </div>
     {% set date = date + timedelta(days=1) %}
-  {% endwhile %}
+  {% endfor %}
 </div>
 
 <div class="nav" style="margin-top: 20px;">
