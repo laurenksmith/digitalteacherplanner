@@ -33,7 +33,7 @@ def save_events(events):
 
 @app.route('/')
 def index():
-    events = Event.query.order_by(Event.date).all()
+    events = load_events()
     today_iso = datetime.today().date().isoformat()
     return render_template('index.html', events=events, today_iso=today_iso)
 
