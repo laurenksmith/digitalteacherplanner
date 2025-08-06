@@ -13,13 +13,15 @@
 </form>
 
 <div class="view-buttons">
-    <a href="{{ url_for('week_view', date=datetime.today().date().isoformat()) }}" class="btn">
-        <i class="fas fa-calendar-week"></i> Weekly View
-    </a>
-    <a href="{{ url_for('month_redirect') }}" class="btn">
-        <i class="fas fa-calendar-alt"></i> Monthly View
-    </a>
-    <!-- Year view not implemented yet -->
+  <a href="{{ url_for('week_view', date=datetime.today().date().isoformat()) }}" class="btn">
+    <i class="fas fa-calendar-week"></i> Weekly View
+  </a>
+  <a href="{{ url_for('month_redirect') }}" class="btn">
+    <i class="fas fa-calendar-alt"></i> Monthly View
+  </a>
+  <a href="{{ url_for('yearly_view') }}" class="btn">
+    <i class="fas fa-calendar"></i> Yearly View
+  </a>
 </div>
 
 <h2>Events</h2>

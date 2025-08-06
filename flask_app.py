@@ -165,5 +165,10 @@ def month_view(year, month):
     )
 
 
+@app.route('/yearly')
+def yearly_view():
+    return render_template('yearly.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
