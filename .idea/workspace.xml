@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Adding the ability to look at the week view (or a particular date in the week) as well as upcoming tasks in the following weeks.">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Experimenting with margin values">
+      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/events_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/weekly.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weekly.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754476765662</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Experimenting with margin values">
+      <option name="closed" value="true" />
+      <created>1754480117508</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1754480117508</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,6 +192,7 @@
     <MESSAGE value="I removed the test data I added previously which did not include the id key" />
     <MESSAGE value="Committing my test edit :)" />
     <MESSAGE value="Adding the ability to look at the week view (or a particular date in the week) as well as upcoming tasks in the following weeks." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the ability to look at the week view (or a particular date in the week) as well as upcoming tasks in the following weeks." />
+    <MESSAGE value="Experimenting with margin values" />
+    <option name="LAST_COMMIT_MESSAGE" value="Experimenting with margin values" />
   </component>
 </project>

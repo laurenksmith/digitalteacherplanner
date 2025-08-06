@@ -109,7 +109,14 @@ def week_view(date):
             except:
                 continue
 
-    return render_template('weekly.html', week_events=week_events, upcoming_tasks=upcoming_tasks, start=start_of_week, end=end_of_week)
+    return render_template(
+        'weekly.html',
+        week_events=week_events,
+        upcoming_tasks=upcoming_tasks,
+        start=start_of_week,
+        end=end_of_week,
+        timedelta=timedelta  # 👈 this is the key fix
+    )
 
 
 if __name__ == '__main__':

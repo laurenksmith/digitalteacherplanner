@@ -20,6 +20,17 @@
 <body>
 
   <h1>Week of {{ start.strftime('%d %B %Y') }} – {{ end.strftime('%d %B %Y') }}</h1>
+{% if upcoming_tasks %}
+  <h2>Upcoming Tasks (Next Week)</h2>
+  <ul>
+    {% for task in upcoming_tasks %}
+      <li>
+        <strong>{{ task.title }}</strong> – {{ task.date }}
+        <br>{{ task.notes }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
 
   <div class="nav">
     <a href="{{ url_for('week_view', date=(start - timedelta(days=7)).isoformat()) }}">← Previous Week</a>
