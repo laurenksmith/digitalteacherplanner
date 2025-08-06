@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Updated weekly and styles.css files to reflect the use of the base file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/monthly_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/monthly_template.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754503988726</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated weekly and styles.css files to reflect the use of the base file.">
+      <option name="closed" value="true" />
+      <created>1754504358254</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1754504358254</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,6 +224,7 @@
     <MESSAGE value="I've updated the font for the headings as well as the ability to see the events which will be coming up in the following week for the weekly planner." />
     <MESSAGE value="I've begun adjusting my code to include features like buttons, etc. However, I've looked up best practices, so I have now created a base.html file and am editing my current code as I go to reflect this!" />
     <MESSAGE value="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
-    <option name="LAST_COMMIT_MESSAGE" value="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
+    <MESSAGE value="Updated weekly and styles.css files to reflect the use of the base file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated weekly and styles.css files to reflect the use of the base file." />
   </component>
 </project>

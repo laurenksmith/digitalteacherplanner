@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Monthly Planner</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-  <script src="https://kit.fontawesome.com/37bf3e2592.js" crossorigin="anonymous"></script>
-  <style>
-    .calendar {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 10px;
-    }
-    .day {
-      border: 1px solid #ccc;
-      padding: 10px;
-      min-height: 100px;
-    }
-    .today {
-      background-color: #ffffe0;
-    }
-    .nav {
-      margin: 20px 0;
-    }
-  </style>
-</head>
-<body>
-  <h1>{{ start_of_month.strftime('%B %Y') }}</h1>
+{% extends "base.html" %}
 
- <div class="nav">
+{% block title %}Monthly Planner{% endblock %}
+
+{% block content %}
+<h1>{{ start_of_month.strftime('%B %Y') }}</h1>
+
+<div class="nav">
   <a href="{{ url_for('monthly_view', year=prev_year, month=prev_month) }}">
     <i class="fas fa-arrow-left"></i> Previous
   </a>
@@ -38,27 +17,26 @@
   </a>
 </div>
 
-  <div class="calendar">
-    {% for i in range(7) %}
-      <div><strong>{{ ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][i] }}</strong></div>
-    {% endfor %}
+<div class="calendar">
+  {% for i in range(7) %}
+    <div><strong>{{ ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][i] }}</strong></div>
+  {% endfor %}
 
-    {% set date = calendar_start %}
-    {% while date <= calendar_end %}
-      <div class="day {% if date == today %}today{% endif %}">
-        <div><strong>{{ date.day }}</strong></div>
-        {% if event_map[date.isoformat()] %}
-          {% for event in event_map[date.isoformat()] %}
-            <div class="event">{{ event.title }}</div>
-          {% endfor %}
-        {% endif %}
-      </div>
-      {% set date = date + timedelta(days=1) %}
-    {% endwhile %}
-  </div>
+  {% set date = calendar_start %}
+  {% while date <= calendar_end %}
+    <div class="day {% if date == today %}today{% endif %}">
+      <div><strong>{{ date.day }}</strong></div>
+      {% if event_map[date.isoformat()] %}
+        {% for event in event_map[date.isoformat()] %}
+          <div class="event">{{ event.title }}</div>
+        {% endfor %}
+      {% endif %}
+    </div>
+    {% set date = date + timedelta(days=1) %}
+  {% endwhile %}
+</div>
 
-  <div style="margin-top: 20px;">
-    <a href="{{ url_for('index') }}">Back to homepage</a>
-  </div>
-</body>
-</html>
+<div class="nav" style="margin-top: 20px;">
+  <a href="{{ url_for('index') }}">Back to homepage</a>
+</div>
+{% endblock %}
