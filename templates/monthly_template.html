@@ -38,19 +38,6 @@
   {% endfor %}
 </div>
 
-
-  {% for date in dates %}
-    <div class="day {% if date.isoformat() == today.isoformat() %}today{% endif %}">
-      <div><strong>{{ date.day }}</strong></div>
-      {% if event_map[date.isoformat()] %}
-        {% for event in event_map[date.isoformat()] %}
-          <div class="event">{{ event.title }}</div>
-        {% endfor %}
-      {% endif %}
-    </div>
-  {% endfor %}
-</div>
-
 <div class="nav" style="margin-top: 20px;">
   <a href="{{ url_for('index') }}">Back to homepage</a>
 </div>
