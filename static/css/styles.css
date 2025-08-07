@@ -61,3 +61,57 @@ h1, h2 {
   border: 2px solid #f1c232;
   font-weight: bold;
 }
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Weekday header styling */
+.weekdays {
+  display: contents; /* lets them sit in the same grid */
+}
+
+.weekday {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #888;
+  padding-bottom: 4px;
+}
+
+/* Calendar day styling */
+.day {
+  border: 1px solid #ccc;
+  padding: 8px;
+  min-height: 80px;
+  background-color: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.day.today {
+  background-color: #ffd966;
+  border: 2px solid #f1c232;
+  font-weight: bold;
+}
+
+.event {
+  font-size: 0.9em;
+  margin-top: 5px;
+  background-color: #f3f3f3;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .day {
+    min-height: 60px;
+    font-size: 0.9em;
+  }
+  .event {
+    font-size: 0.8em;
+  }
+}

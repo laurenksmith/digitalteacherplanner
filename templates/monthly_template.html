@@ -18,9 +18,26 @@
 </div>
 
 <div class="calendar">
-  {% for i in range(7) %}
-    <div><strong>{{ ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][i] }}</strong></div>
+  {# Weekday headers #}
+  <div class="weekdays">
+    {% for i in range(7) %}
+      <div class="weekday">{{ ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'][i] }}</div>
+    {% endfor %}
+  </div>
+
+  {# Calendar days #}
+  {% for date in dates %}
+    <div class="day {% if date == today %}today{% endif %}">
+      <div><strong>{{ date.day }}</strong></div>
+      {% if event_map[date.isoformat()] %}
+        {% for event in event_map[date.isoformat()] %}
+          <div class="event">{{ event.title }}</div>
+        {% endfor %}
+      {% endif %}
+    </div>
   {% endfor %}
+</div>
+
 
   {% for date in dates %}
     <div class="day {% if date.isoformat() == today.isoformat() %}today{% endif %}">
