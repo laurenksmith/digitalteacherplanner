@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/monthly_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/monthly_template.html" afterDir="false" />
-    </list>
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Continuing to debug and try work out why the monthly view is still not working." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -273,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754508144228</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Continuing to debug and try work out why the monthly view is still not working.">
+      <option name="closed" value="true" />
+      <created>1754567283974</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1754567283974</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -298,6 +302,7 @@
     <MESSAGE value="I had an error when I tried to run the flask_app.py file - it seems to be with the use of datetime for Jinja. Hopefully these changes will work!" />
     <MESSAGE value="Debugging! I confused things with my use of events and all my changes, but I seem to have fixed it now." />
     <MESSAGE value="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!" />
+    <MESSAGE value="Continuing to debug and try work out why the monthly view is still not working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Continuing to debug and try work out why the monthly view is still not working." />
   </component>
 </project>

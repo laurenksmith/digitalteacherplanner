@@ -6,13 +6,13 @@
 <h1>{{ start_of_month.strftime('%B %Y') }}</h1>
 
 <div class="nav">
-  <a href="{{ url_for('monthly_view', year=prev_year, month=prev_month) }}">
+  <a href="{{ url_for('month_view', year=prev_year, month=prev_month) }}">  <!-- I think this might fix my error message. I use month view elsewhere but for some reason I called it monthly_view here.-->
     <i class="fas fa-arrow-left"></i> Previous
   </a>
-  <a href="{{ url_for('monthly_view', year=today.year, month=today.month) }}">
+  <a href="{{ url_for('month_view', year=today.year, month=today.month) }}"> <!-- I think this might fix my error message. I use month view elsewhere but for some reason I called it monthly_view here.-->
     <i class="fas fa-calendar-alt"></i> This Month
   </a>
-  <a href="{{ url_for('monthly_view', year=next_year, month=next_month) }}">
+  <a href="{{ url_for('month_view', year=next_year, month=next_month) }}"> <!-- I think this might fix my error message. I use month view elsewhere but for some reason I called it monthly_view here.-->
     Next <i class="fas fa-arrow-right"></i>
   </a>
 </div>
