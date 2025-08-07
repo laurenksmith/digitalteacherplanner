@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Debugging! I confused things with my use of events and all my changes, but I seem to have fixed it now.">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/monthly_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/monthly_template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.flask_app">
     <configuration name="flask_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TeacherPlanner" />
       <option name="ENV_FILES" value="" />
@@ -265,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754507627986</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!">
+      <option name="closed" value="true" />
+      <created>1754508144228</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1754508144228</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -289,6 +297,7 @@
     <MESSAGE value="I have updated the flask_app.py and index.html files and created a yearly.html file too." />
     <MESSAGE value="I had an error when I tried to run the flask_app.py file - it seems to be with the use of datetime for Jinja. Hopefully these changes will work!" />
     <MESSAGE value="Debugging! I confused things with my use of events and all my changes, but I seem to have fixed it now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Debugging! I confused things with my use of events and all my changes, but I seem to have fixed it now." />
+    <MESSAGE value="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!" />
   </component>
 </project>

@@ -23,7 +23,7 @@
   {% endfor %}
 
   {% for date in dates %}
-    <div class="day {% if date == today %}today{% endif %}">
+    <div class="day {% if date.isoformat() == today.isoformat() %}today{% endif %}">
       <div><strong>{{ date.day }}</strong></div>
       {% if event_map[date.isoformat()] %}
         {% for event in event_map[date.isoformat()] %}
@@ -31,7 +31,6 @@
         {% endfor %}
       {% endif %}
     </div>
-    {% set date = date + timedelta(days=1) %}
   {% endfor %}
 </div>
 

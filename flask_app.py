@@ -170,7 +170,8 @@ def month_view(year, month):
         calendar_end=calendar_end,
         event_map=event_map,
         today=datetime.today().date(),
-        dates=dates
+        dates=dates,
+        start_of_month=calendar_start #crossing fingers and toes this fixes the error I keep getting!
     )
 
 
