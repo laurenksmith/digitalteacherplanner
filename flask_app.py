@@ -111,7 +111,7 @@ def week_view(date):
                 continue
 
     return render_template(
-        'weekly.html',
+        'weekly_template.html',
         week_events=week_events,
         upcoming_tasks=upcoming_tasks,
         start=start_of_week,
