@@ -151,7 +151,7 @@ def month_view(year, month):
     for event in events:
         try:
             date = datetime.strptime(event['date'], '%Y-%m-%d').date()
-            if calendar_start <= date <= calendar_end and date.month == month:
+            if date.year == year and date.month == month:
                 event_map.setdefault(date.isoformat(), []).append(event)
         except (KeyError, ValueError):
             continue
