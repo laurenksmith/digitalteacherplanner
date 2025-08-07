@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block title %}Yearly Planner{% endblock %}
+
+{% block content %}
+<h1>📅 Yearly Planner</h1>
+<p>This is just a placeholder for the yearly view.</p>
+<p>You could eventually render all 12 months here or display a summary of important dates.</p>
+<a href="{{ url_for('index') }}">Back to homepage</a>
+{% endblock %}
