@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Continuing to debug and try work out why the monthly view is still not working." />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I am still getting error messages - just a different one! I think it is because, for some reason, I used 'monthly' instead of 'month' in the monthly_template, when I refer to it as month_view everywhere else.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -277,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754567283974</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="I am still getting error messages - just a different one! I think it is because, for some reason, I used 'monthly' instead of 'month' in the monthly_template, when I refer to it as month_view everywhere else.">
+      <option name="closed" value="true" />
+      <created>1754567654953</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1754567654953</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -303,6 +314,7 @@
     <MESSAGE value="Debugging! I confused things with my use of events and all my changes, but I seem to have fixed it now." />
     <MESSAGE value="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!" />
     <MESSAGE value="Continuing to debug and try work out why the monthly view is still not working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Continuing to debug and try work out why the monthly view is still not working." />
+    <MESSAGE value="I am still getting error messages - just a different one! I think it is because, for some reason, I used 'monthly' instead of 'month' in the monthly_template, when I refer to it as month_view everywhere else." />
+    <option name="LAST_COMMIT_MESSAGE" value="I am still getting error messages - just a different one! I think it is because, for some reason, I used 'monthly' instead of 'month' in the monthly_template, when I refer to it as month_view everywhere else." />
   </component>
 </project>

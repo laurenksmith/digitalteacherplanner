@@ -155,24 +155,42 @@ def month_view(year, month):
         except (KeyError, ValueError):
             continue
 
-    # Create list of dates to render in the template
-    dates = []
-    date = calendar_start
-    while date <= calendar_end:
-        dates.append(date)
-        date += timedelta(days=1)
+        # Create list of dates to render in the template
+        dates = []
+        date = calendar_start
+        while date <= calendar_end:
+            dates.append(date)
+            date += timedelta(days=1)
 
-    return render_template(
-        'monthly_template.html',
-        year=year,
-        month=month,
-        calendar_start=calendar_start,
-        calendar_end=calendar_end,
-        event_map=event_map,
-        today=datetime.today().date(),
-        dates=dates,
-        start_of_month=calendar_start #crossing fingers and toes this fixes the error I keep getting!
-    )
+        # Navigation helpers
+        prev_month = month - 1
+        prev_year = year
+        next_month = month + 1
+        next_year = year
+
+        if prev_month == 0:
+            prev_month = 12
+            prev_year -= 1
+
+        if next_month == 13:
+            next_month = 1
+            next_year += 1
+
+        return render_template(
+            'monthly_template.html',
+            year=year,
+            month=month,
+            calendar_start=calendar_start,
+            calendar_end=calendar_end,
+            event_map=event_map,
+            today=datetime.today().date(),
+            dates=dates,
+            start_of_month=calendar_start,
+            prev_year=prev_year,
+            prev_month=prev_month,
+            next_year=next_year,
+            next_month=next_month
+        )
 
 
 @app.route('/yearly')
