@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I removed the duplicate dates loop, which was causing the calendar to display as a grid AND a list.">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I had an obsolete file which I have safely deleted, and I refactored the current yearly.html file (the one I do need) to be renamed yearly_template.html, in line with how I have named the other templates, for consistency.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/weekly.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/weekly_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weekly_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/yearly_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/yearly_template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -314,13 +314,27 @@
       <option name="project" value="LOCAL" />
       <updated>1754569800014</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="I had an obsolete file which I have safely deleted, and I refactored the current weekly.html file (the one I do need) to be renamed weekly_template.html, in line with how I have named the other templates, for consistency.">
+      <option name="closed" value="true" />
+      <created>1754570569151</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1754570569152</updated>
+    </task>
+    <task id="LOCAL-00027" summary="I had an obsolete file which I have safely deleted, and I refactored the current yearly.html file (the one I do need) to be renamed yearly_template.html, in line with how I have named the other templates, for consistency.">
+      <option name="closed" value="true" />
+      <created>1754570773178</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1754570773178</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Everything I have created for my teacher planner to this point. Still a lot to do, but I have the beginnings!" />
-    <MESSAGE value="I have created a basic Flask app which the user would be able to use to create a task/event in their planner." />
     <MESSAGE value="Added missing empty lines between blocks" />
     <MESSAGE value="Updated my flask file to include the ability to edit and delete tasks" />
     <MESSAGE value="Updated my index file to include the edit and delete options." />
@@ -344,6 +358,8 @@
     <MESSAGE value="I have fixed the error - finally! Now, the calendar view looks really strange, so I am going to work out what I need to add in order for it to display correctly." />
     <MESSAGE value="I have updated the monthly template and the styles.css files so that my calendar displays correctly." />
     <MESSAGE value="I removed the duplicate dates loop, which was causing the calendar to display as a grid AND a list." />
-    <option name="LAST_COMMIT_MESSAGE" value="I removed the duplicate dates loop, which was causing the calendar to display as a grid AND a list." />
+    <MESSAGE value="I had an obsolete file which I have safely deleted, and I refactored the current weekly.html file (the one I do need) to be renamed weekly_template.html, in line with how I have named the other templates, for consistency." />
+    <MESSAGE value="I had an obsolete file which I have safely deleted, and I refactored the current yearly.html file (the one I do need) to be renamed yearly_template.html, in line with how I have named the other templates, for consistency." />
+    <option name="LAST_COMMIT_MESSAGE" value="I had an obsolete file which I have safely deleted, and I refactored the current yearly.html file (the one I do need) to be renamed yearly_template.html, in line with how I have named the other templates, for consistency." />
   </component>
 </project>

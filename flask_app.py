@@ -132,13 +132,14 @@ def month_view(year, month):
         start_of_month = datetime(year, month, 1).date()
     except ValueError:
         return "Invalid date", 400
+    print(f"📆 month_view: Loading year={year}, month={month}")
+    print(f"DEBUG: start_of_month = {start_of_month}, label = {start_of_month.strftime('%B')}, actual month = {month}")
 
     # Get number of days in the month
     if month == 12:
-        next_month = datetime(year + 1, 1, 1).date()
+        end_of_month = datetime(year, 12, 31).date()
     else:
-        next_month = datetime(year, month + 1, 1).date()
-    end_of_month = next_month - timedelta(days=1)
+        end_of_month = datetime(year, month + 1, 1).date() - timedelta(days=1)
 
     # Get calendar grid info
     calendar_start = start_of_month - timedelta(days=start_of_month.weekday())  # Start from Monday
@@ -150,7 +151,7 @@ def month_view(year, month):
     for event in events:
         try:
             date = datetime.strptime(event['date'], '%Y-%m-%d').date()
-            if calendar_start <= date <= calendar_end:
+            if calendar_start <= date <= calendar_end and date.month == month:
                 event_map.setdefault(date.isoformat(), []).append(event)
         except (KeyError, ValueError):
             continue
@@ -185,7 +186,7 @@ def month_view(year, month):
             event_map=event_map,
             today=datetime.today().date(),
             dates=dates,
-            start_of_month=calendar_start,
+            start_of_month=start_of_month,
             prev_year=prev_year,
             prev_month=prev_month,
             next_year=next_year,
@@ -195,7 +196,27 @@ def month_view(year, month):
 
 @app.route('/yearly')
 def yearly_view():
-    return render_template('yearly_template.html')
+    events = load_events()
+    today = datetime.today().date()
+    year = today.year
+
+    # Create a structure to count events in each month
+    month_data = {month: [] for month in range(1, 13)}
+
+    for event in events:
+        try:
+            event_date = datetime.strptime(event['date'], '%Y-%m-%d').date()
+            if event_date.year == year:
+                month_data[event_date.month].append(event)
+        except (KeyError, ValueError):
+            continue
+
+    return render_template(
+        'yearly_template.html',
+        year=year,
+        month_data=month_data,
+        today=today
+    )
 
 
 if __name__ == '__main__':
