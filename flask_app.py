@@ -148,13 +148,18 @@ def month_view(year, month):
     # Collect events
     events = load_events()
     event_map = {}
+
+    print(f"[MONTH DEBUG] total events loaded = {len(events)}")
+
     for event in events:
         try:
             date = datetime.strptime(event['date'], '%Y-%m-%d').date()
             if calendar_start <= date <= calendar_end:
                 event_map.setdefault(date.isoformat(), []).append(event)
+                print(f"[MONTH DEBUG] ✓ add {date}: '{event.get('title')}'")
         except (KeyError, ValueError):
             continue
+        print("[MONTH DEBUG] summary:",{date: len(v) for date, v in sorted(event_map.items())})
 
         # Create list of dates to render in the template
         dates = []
