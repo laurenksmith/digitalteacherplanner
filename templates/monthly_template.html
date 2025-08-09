@@ -29,12 +29,13 @@
   {% for date in dates %}
     <div class="day {% if date == today %}today{% endif %}">
       <div><strong>{{ date.day }}</strong></div>
-      {% if event_map[date.isoformat()] %}
-        {% for event in event_map[date.isoformat()] %}
-          <div class="event">{{ event.title }}</div>
-        {% endfor %}
-      {% endif %}
+
+      {% for event in event_map.get(date.isoformat(), []) %}
+        <div class="event">{{ event.title }}</div>
+      {% endfor %}
+
     </div>
+
   {% endfor %}
 </div>
 
