@@ -33,8 +33,13 @@
         <a href="{{ url_for('yearly_redirect') }}"><i class="fas fa-calendar"></i> Yearly</a>
     </nav>
 
-    {% block content %}{% endblock %}
+    <!-- Banner -->
+    <div class="banner"></div>
 
+    <!-- Main content container -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
 </body>
 </html>
 
