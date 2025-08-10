@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I've tried to add a banner at the tio of the homepage to make it more visually appealing.">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Attempting to align my notes text box with the other text boxes on the home page.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +35,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.flask_app.executor": "Run",
-    "Python.generator.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/laure/Documents/TeacherPlanner/TeacherPlanner/static/images"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.flask_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.generator.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/laure/Documents/TeacherPlanner/TeacherPlanner/static/images&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\laure\Documents\TeacherPlanner\TeacherPlanner\static\images" />
@@ -431,12 +430,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754839807382</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Attempting to align my notes text box with the other text boxes on the home page.">
+      <option name="closed" value="true" />
+      <created>1754849741836</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1754849741836</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated weekly and styles.css files to reflect the use of the base file." />
     <MESSAGE value="Updated monthly_template.html file to reflect the use of the base file." />
     <MESSAGE value="I have updated the flask_app.py and index.html files and created a yearly.html file too." />
     <MESSAGE value="I had an error when I tried to run the flask_app.py file - it seems to be with the use of datetime for Jinja. Hopefully these changes will work!" />
@@ -461,6 +467,7 @@
     <MESSAGE value="I'm now making the planner pretty... hopefully!" />
     <MESSAGE value="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling." />
     <MESSAGE value="I've tried to add a banner at the tio of the homepage to make it more visually appealing." />
-    <option name="LAST_COMMIT_MESSAGE" value="I've tried to add a banner at the tio of the homepage to make it more visually appealing." />
+    <MESSAGE value="Attempting to align my notes text box with the other text boxes on the home page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempting to align my notes text box with the other text boxes on the home page." />
   </component>
 </project>
