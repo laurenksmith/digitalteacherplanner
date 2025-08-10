@@ -116,7 +116,7 @@ def week_view(date):
         upcoming_tasks=upcoming_tasks,
         start=start_of_week,
         end=end_of_week,
-        timedelta=timedelta  # 👈 this is the key fix
+        timedelta=timedelta
     )
 
 
@@ -132,71 +132,84 @@ def month_view(year, month):
         start_of_month = datetime(year, month, 1).date()
     except ValueError:
         return "Invalid date", 400
-    print(f"📆 month_view: Loading year={year}, month={month}")
-    print(f"DEBUG: start_of_month = {start_of_month}, label = {start_of_month.strftime('%B')}, actual month = {month}")
 
-    # Get number of days in the month
+    # Work out end_of_month
     if month == 12:
         end_of_month = datetime(year, 12, 31).date()
     else:
         end_of_month = datetime(year, month + 1, 1).date() - timedelta(days=1)
 
-    # Get calendar grid info
-    calendar_start = start_of_month - timedelta(days=start_of_month.weekday())  # Start from Monday
-    calendar_end = end_of_month + timedelta(days=(6 - end_of_month.weekday()))
+    # Grid bounds (Mon..Sun)
+    calendar_start = start_of_month - timedelta(days=start_of_month.weekday())
+    calendar_end   = end_of_month   + timedelta(days=(6 - end_of_month.weekday()))
 
-    # Collect events
+    # --- DEBUG: what is rendering
+    print(f"month_view: Loading year={year}, month={month}")
+    print(f"DEBUG: start_of_month = {start_of_month}, label = {start_of_month.strftime('%B')}, actual month = {month}")
+
+    # Build event_map only for dates inside the grid
     events = load_events()
     event_map = {}
-
     print(f"[MONTH DEBUG] total events loaded = {len(events)}")
 
-    for event in events:
+    for idx, event in enumerate(events):
         try:
-            date = datetime.strptime(event['date'], '%Y-%m-%d').date()
-            if calendar_start <= date <= calendar_end:
-                event_map.setdefault(date.isoformat(), []).append(event)
-                print(f"[MONTH DEBUG] ✓ add {date}: '{event.get('title')}'")
-        except (KeyError, ValueError):
+            raw = event.get('date')
+            d = datetime.strptime(raw, '%Y-%m-%d').date()
+            in_range = calendar_start <= d <= calendar_end
+            # DEBUG per event
+            print(f"[MONTH DEBUG] checking #{idx}: {event!r}")
+            print(f"[MONTH DEBUG] └ parsed date={d}, in_range={in_range}, month={d.month}, target={month}")
+
+            if in_range:
+                event_map.setdefault(d.isoformat(), []).append(event)
+                print(f"[MONTH DEBUG] ✓ added on {d}: '{event.get('title','')}'")
+            else:
+                print(f"[MONTH DEBUG] ✗ skipped (outside grid): {d}")
+        except Exception as e:
+            print(f"[MONTH DEBUG] !! error on #{idx}: {event!r} -> {e!r}")
             continue
-        print("[MONTH DEBUG] summary:",{date: len(v) for date, v in sorted(event_map.items())})
 
-        # Create list of dates to render in the template
-        dates = []
-        date = calendar_start
-        while date <= calendar_end:
-            dates.append(date)
-            date += timedelta(days=1)
+    print("[MONTH DEBUG] summary:",
+          {k: len(v) for k, v in sorted(event_map.items())})
 
-        # Navigation helpers
-        prev_month = month - 1
-        prev_year = year
-        next_month = month + 1
-        next_year = year
+    # Create the list of dates to render
+    dates = []
+    d = calendar_start
+    while d <= calendar_end:
+        dates.append(d)
+        d += timedelta(days=1)
 
-        if prev_month == 0:
-            prev_month = 12
-            prev_year -= 1
+    # Extra debug to confirm the grid length
+    print(f"[MONTH DEBUG] dates generated: {len(dates)} from {calendar_start} .. {calendar_end}")
 
-        if next_month == 13:
-            next_month = 1
-            next_year += 1
+    # Prev/next helpers
+    prev_month = month - 1
+    prev_year  = year
+    next_month = month + 1
+    next_year  = year
+    if prev_month == 0:
+        prev_month = 12
+        prev_year -= 1
+    if next_month == 13:
+        next_month = 1
+        next_year += 1
 
-        return render_template(
-            'monthly_template.html',
-            year=year,
-            month=month,
-            calendar_start=calendar_start,
-            calendar_end=calendar_end,
-            event_map=event_map,
-            today=datetime.today().date(),
-            dates=dates,
-            start_of_month=start_of_month,
-            prev_year=prev_year,
-            prev_month=prev_month,
-            next_year=next_year,
-            next_month=next_month
-        )
+    return render_template(
+        'monthly_template.html',
+        year=year,
+        month=month,
+        calendar_start=calendar_start,
+        calendar_end=calendar_end,
+        event_map=event_map,
+        today=datetime.today().date(),
+        dates=dates,
+        start_of_month=start_of_month,
+        prev_year=prev_year,
+        prev_month=prev_month,
+        next_year=next_year,
+        next_month=next_month
+    )
 
 
 @app.route('/yearly')

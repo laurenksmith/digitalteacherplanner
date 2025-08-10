@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Continuing to debug and try to work out why the events aren't showing up on the monthly overview - it worked initially, so I think it must be code that I added afterward.">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Still debugging. Events are definitely saved, just not showing up on monthly view. The hunt continues!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
     </list>
@@ -352,12 +352,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754745415232</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Still debugging. Events are definitely saved, just not showing up on monthly view. The hunt continues!">
+      <option name="closed" value="true" />
+      <created>1754746532201</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1754746532201</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created an edit file" />
     <MESSAGE value="I've changed my events_data.json file to a list instead of a dictionary, as I got an error when I tried to add an event to my planner. This appears to be the cause." />
     <MESSAGE value="I removed the test data I added previously which did not include the id key" />
     <MESSAGE value="Committing my test edit :)" />
@@ -382,6 +389,7 @@
     <MESSAGE value="I have been debugging the monthly view, as it was skipping months. It was all to do with how I asked it to structure the grid, it seems.Next, I need to work out why it is not adding the events to the monthly view!" />
     <MESSAGE value="I've updated the event filtering block in my month_view route, so that it includes all events in the selected month, not just those that appear in the grid... hopefully!" />
     <MESSAGE value="Continuing to debug and try to work out why the events aren't showing up on the monthly overview - it worked initially, so I think it must be code that I added afterward." />
-    <option name="LAST_COMMIT_MESSAGE" value="Continuing to debug and try to work out why the events aren't showing up on the monthly overview - it worked initially, so I think it must be code that I added afterward." />
+    <MESSAGE value="Still debugging. Events are definitely saved, just not showing up on monthly view. The hunt continues!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Still debugging. Events are definitely saved, just not showing up on monthly view. The hunt continues!" />
   </component>
 </project>
