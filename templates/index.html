@@ -5,12 +5,14 @@
 {% block content %}
 <h1>My Weekly Planner</h1>
 
+<div class="toolbar">
 <form method="POST" action="/add">
     <input type="text" name="title" placeholder="Event title" required />
     <input type="date" name="date" required />
     <textarea name="notes" placeholder="Notes..."></textarea>
     <button type="submit">Add Event</button>
 </form>
+</div>
 
 <h2>Events</h2>
 {% for event in events %}

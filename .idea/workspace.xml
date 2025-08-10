@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling.">
-      <change afterPath="$PROJECT_DIR$/static/images/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/doodle-banner.jpg" afterDir="false" />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I've tried to add a banner at the tio of the homepage to make it more visually appealing.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -425,12 +423,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754837290755</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="I've tried to add a banner at the tio of the homepage to make it more visually appealing.">
+      <option name="closed" value="true" />
+      <created>1754839807382</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1754839807382</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
     <MESSAGE value="Updated weekly and styles.css files to reflect the use of the base file." />
     <MESSAGE value="Updated monthly_template.html file to reflect the use of the base file." />
     <MESSAGE value="I have updated the flask_app.py and index.html files and created a yearly.html file too." />
@@ -455,6 +460,7 @@
     <MESSAGE value="I've removed unnecessary redirection buttons from the home page, since I have decided to use a navigation bar at the top throughout the planner." />
     <MESSAGE value="I'm now making the planner pretty... hopefully!" />
     <MESSAGE value="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling." />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling." />
+    <MESSAGE value="I've tried to add a banner at the tio of the homepage to make it more visually appealing." />
+    <option name="LAST_COMMIT_MESSAGE" value="I've tried to add a banner at the tio of the homepage to make it more visually appealing." />
   </component>
 </project>
