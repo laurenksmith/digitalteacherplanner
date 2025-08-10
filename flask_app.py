@@ -212,6 +212,11 @@ def month_view(year, month):
     )
 
 
+@app.route('/year')
+def yearly_redirect():
+    return redirect(url_for('yearly_view'))
+
+
 @app.route('/yearly')
 def yearly_view():
     events = load_events()

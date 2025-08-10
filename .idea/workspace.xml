@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="It's finally working! Now, I have added the ability to move to Yearly view from the navigation toolbar.">
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I have changed the icon for yearly view.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,12 +376,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754832986446</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="I have changed the icon for yearly view.">
+      <option name="closed" value="true" />
+      <created>1754833849027</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1754833849027</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Committing my test edit :)" />
     <MESSAGE value="Adding the ability to look at the week view (or a particular date in the week) as well as upcoming tasks in the following weeks." />
     <MESSAGE value="Experimenting with margin values" />
     <MESSAGE value="I've updated the font for the headings as well as the ability to see the events which will be coming up in the following week for the weekly planner." />
@@ -405,6 +413,7 @@
     <MESSAGE value="Still debugging. Events are definitely saved, just not showing up on monthly view. The hunt continues!" />
     <MESSAGE value="Still debugging." />
     <MESSAGE value="It's finally working! Now, I have added the ability to move to Yearly view from the navigation toolbar." />
-    <option name="LAST_COMMIT_MESSAGE" value="It's finally working! Now, I have added the ability to move to Yearly view from the navigation toolbar." />
+    <MESSAGE value="I have changed the icon for yearly view." />
+    <option name="LAST_COMMIT_MESSAGE" value="I have changed the icon for yearly view." />
   </component>
 </project>
