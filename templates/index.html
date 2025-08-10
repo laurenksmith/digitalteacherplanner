@@ -12,18 +12,6 @@
     <button type="submit">Add Event</button>
 </form>
 
-<div class="view-buttons">
-  <a href="{{ url_for('week_view', date=today_iso) }}" class="btn">
-    <i class="fas fa-calendar-week"></i> Weekly View
-  </a>
-  <a href="{{ url_for('month_redirect') }}" class="btn">
-    <i class="fas fa-calendar-alt"></i> Monthly View
-  </a>
-  <a href="{{ url_for('yearly_view') }}" class="btn">
-    <i class="fas fa-calendar"></i> Yearly View
-  </a>
-</div>
-
 <h2>Events</h2>
 {% for event in events %}
     <div class="event">
@@ -35,5 +23,4 @@
     </div>
 {% endfor %}
 
-<p><a href="{{ url_for('month_redirect') }}">📅 View Monthly Calendar</a></p>
 {% endblock %}
