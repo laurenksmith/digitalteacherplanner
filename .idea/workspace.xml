@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Still debugging.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="It's finally working! Now, I have added the ability to move to Yearly view from the navigation toolbar.">
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,12 +367,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754831157194</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="It's finally working! Now, I have added the ability to move to Yearly view from the navigation toolbar.">
+      <option name="closed" value="true" />
+      <created>1754832986446</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1754832986446</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="I removed the test data I added previously which did not include the id key" />
     <MESSAGE value="Committing my test edit :)" />
     <MESSAGE value="Adding the ability to look at the week view (or a particular date in the week) as well as upcoming tasks in the following weeks." />
     <MESSAGE value="Experimenting with margin values" />
@@ -397,6 +404,7 @@
     <MESSAGE value="Continuing to debug and try to work out why the events aren't showing up on the monthly overview - it worked initially, so I think it must be code that I added afterward." />
     <MESSAGE value="Still debugging. Events are definitely saved, just not showing up on monthly view. The hunt continues!" />
     <MESSAGE value="Still debugging." />
-    <option name="LAST_COMMIT_MESSAGE" value="Still debugging." />
+    <MESSAGE value="It's finally working! Now, I have added the ability to move to Yearly view from the navigation toolbar." />
+    <option name="LAST_COMMIT_MESSAGE" value="It's finally working! Now, I have added the ability to move to Yearly view from the navigation toolbar." />
   </component>
 </project>
