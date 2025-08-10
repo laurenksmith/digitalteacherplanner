@@ -1,139 +1,299 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
 
-h1, h2, h3 {
-color: #4a4a4a;
-font-family: "Playwrite HU", cursive;
+/* ------------------------------------------------------------------
+   Fonts
+------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@300;400&family=Inter:wght@400;500;700&display=swap');
+
+/* ------------------------------------------------------------------
+   Brand tokens (Squiggle & Swirl)
+------------------------------------------------------------------ */
+:root{
+  --cream: #fff9f0;
+  --pink:  #fad2e1;
+  --mint:  #b5ead7;
+  --lilac: #c7ceea;
+  --ink:   #4a4a4a;
+
+  --bg: var(--cream);
+  --text: var(--ink);
+  --muted: #7a7a7a;
+
+  --card: #ffffff;
+  --border: #e9e4dc;
+  --shadow: 0 6px 16px rgba(74,74,74,.06);
+
+  --accent: #9aa8ff; /* subtle periwinkle for focus/links */
+  --accent-2: var(--lilac);
+
+  /* event categories (you can map later) */
+  --cat-pink:  var(--pink);
+  --cat-mint:  var(--mint);
+  --cat-lilac: var(--lilac);
+  --cat-ink:   #d8d8d8;
 }
 
-.btn i {
-  margin-right: 8px;
+/* ------------------------------------------------------------------
+   Base layout
+------------------------------------------------------------------ */
+*{ box-sizing: border-box; }
+html,body{ height:100%; }
+body{
+  margin:0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.45 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-.nav a i {
-  margin: 0 6px;
+/* Page width */
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(16px, 2.4vw, 28px);
 }
 
-/* === Weekly View Styles === */
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+/* Headings = brandy + playful */
+h1,h2,h3{
+  font-family: "Playwrite HU", cursive;
+  color: var(--text);
+  letter-spacing:.4px;
+  margin: 0 0 .5rem 0;
+}
+h1{ font-size: clamp(28px, 4vw, 44px); }
+h2{ font-size: clamp(22px, 2.4vw, 28px); }
+h3{ font-size: clamp(18px, 2vw, 22px); }
+
+/* Links */
+a{
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color .15s ease, border-color .15s ease, background-color .2s ease;
+}
+a:hover{ color: #2f2f2f; border-color: var(--accent-2); }
+
+/* Buttons (shared) */
+.btn{
+  appearance:none;
+  border: 1px solid var(--border);
+  background:#fff;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  cursor:pointer;
+  transition: transform .05s ease, background .2s ease, border-color .2s ease;
+}
+.btn:hover{ background: #faf7f2; }
+.btn:active{ transform: translateY(1px); }
+.btn i{ margin-right: 8px; }
+
+/* Inputs */
+input[type="text"], input[type="date"], textarea{
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background:#fff;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  box-shadow: var(--shadow);
+}
+input:focus, textarea:focus{
+  border-color: var(--accent-2);
+  box-shadow: 0 0 0 3px rgba(199,206,234,.35);
 }
 
-h1, h2 {
+/* ------------------------------------------------------------------
+   Top Nav
+------------------------------------------------------------------ */
+.nav{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+  margin: 16px 0 26px 0;
+  flex-wrap: wrap;
+}
+.nav a{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+.nav a i{ opacity:.8; }
+.nav a:hover{ background: var(--mint); border-color: var(--mint); }
+
+/* ------------------------------------------------------------------
+   Forms row (event add)
+------------------------------------------------------------------ */
+.toolbar{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items:center;
+  margin: 16px 0 24px 0;
+}
+.toolbar .btn{ white-space:nowrap; }
+
+/* Section titles */
+.section-title{
+  margin-top: 12px;
   margin-bottom: 10px;
+  font-size: clamp(18px,2.2vw,24px);
 }
 
-.day {
-  margin-bottom: 30px;
+/* ------------------------------------------------------------------
+   Weekly list
+------------------------------------------------------------------ */
+.event{
+  background:#fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin: 6px 0;
+  box-shadow: var(--shadow);
+  font-size: .96rem;
+}
+.event strong{ font-weight:700; }
+.event small{ color: var(--muted); }
+
+/* Optional category accents */
+.event--pink   { background: var(--cat-pink);  }
+.event--mint   { background: var(--cat-mint);  }
+.event--lilac  { background: var(--cat-lilac); }
+.event--neutral{ background: var(--cat-ink);   }
+
+/* Chips for actions (Edit/Delete links) */
+.actions a{
+  display:inline-block; margin-right:10px;
+  font-size:.92rem; color:var(--muted);
+}
+.actions a:hover{ color:var(--text); }
+
+/* Date label in weekly list */
+.date-label{
+  font-weight:700;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
 }
 
-.event {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-}
-
-.nav {
-  margin: 20px 0;
-}
-
-.nav a {
-  margin: 0 10px;
-}
-
-.date-label {
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-@media (max-width: 600px) {
-  .day {
-    margin-bottom: 20px;
-  }
-  .event {
-    font-size: 0.9em;
-  }
-}
-
-.today {
-  background-color: #ffd966;
-  border: 2px solid #f1c232;
-  font-weight: bold;
-}
-
-.calendar {
-  display: grid;
+/* ------------------------------------------------------------------
+   Calendar (Monthly)
+------------------------------------------------------------------ */
+.calendar{
+  display:grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
-/* Weekday header styling */
-.weekdays {
-  display: contents; /* lets them sit in the same grid */
+/* Weekday headers */
+.weekdays{ display: contents; }
+.weekday{
+  text-align:center;
+  font-weight:700;
+  border-bottom: 2px solid #d8d8d8;
+  padding-bottom: 6px;
+  color: var(--muted);
 }
 
-.weekday {
-  text-align: center;
-  font-weight: bold;
-  border-bottom: 2px solid #888;
-  padding-bottom: 4px;
+/* Day cells */
+.day{
+  position:relative;
+  min-height: 96px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 10px 6px;
+  box-shadow: var(--shadow);
+}
+.day strong{ font-size: .98rem; }
+.day.today{
+  background: var(--lilac);
+  border-color: #aeb9e9;
+  box-shadow: 0 8px 20px rgba(199,206,234,.45);
+  font-weight:700;
 }
 
-/* Calendar day styling */
-.day {
-  border: 1px solid #ccc;
-  padding: 8px;
-  min-height: 80px;
-  background-color: #fff;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.day.today {
-  background-color: #ffd966;
-  border: 2px solid #f1c232;
-  font-weight: bold;
-}
-
-.event {
-  font-size: 0.9em;
-  margin-top: 5px;
-  background-color: #f3f3f3;
-  padding: 2px 4px;
-  border-radius: 4px;
+/* Event pills inside month cells */
+.day .event{
+  margin-top: 6px;
+  padding: 6px 8px;
+  font-size: .9rem;
+  border-radius: 10px;
+  background:#f7f7f7;
+  border: 1px solid #eee;
+  box-shadow:none;
 }
 
 /* Responsive tweaks */
-@media (max-width: 600px) {
-  .day {
-    min-height: 60px;
-    font-size: 0.9em;
-  }
-  .event {
-    font-size: 0.8em;
-  }
+@media (max-width: 900px){
+  .calendar{ gap: 8px; }
+  .day{ min-height: 84px; }
+}
+@media (max-width: 640px){
+  .nav{ gap:6px; }
+  .calendar{ grid-template-columns: repeat(2, 1fr); }
 }
 
-.year-grid {
+/* ------------------------------------------------------------------
+   Year grid
+------------------------------------------------------------------ */
+.year-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-top: 20px;
+  gap: 18px;
+  margin-top: 18px;
 }
-
-.month-box {
-  padding: 15px;
-  background-color: #f3f3f3;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
+.month-box{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding: 18px 14px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
   color: inherit;
-  transition: background-color 0.2s ease;
+  transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.month-box h3{ margin: 2px 0 8px; }
+.month-box p{ margin:0; color:var(--muted); }
+.month-box:hover{
+  transform: translateY(-2px);
+  border-color: var(--mint);
+  box-shadow: 0 10px 24px rgba(181,234,215,.35);
 }
 
-.month-box:hover {
-  background-color: #eaeaea;
+/* ------------------------------------------------------------------
+   Utility / empty states
+------------------------------------------------------------------ */
+.empty{
+  text-align:center;
+  color: var(--muted);
+  border:1px dashed var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
 }
+
+<div class="container">
+  <!-- your page content -->
+</div>
+
+<div class="toolbar">
+  <!-- event title input, date input, notes, Add Event button -->
+</div>
+
+<div class="actions">
+  <a href="...">Edit</a> <a href="...">Delete</a>
+</div>
+
+<div class="event event--mint">Meeting with Veneta</div>
