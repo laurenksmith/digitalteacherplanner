@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="I'm now making the planner pretty... hopefully!">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling.">
+      <change afterPath="$PROJECT_DIR$/static/images/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/doodle-banner.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.flask_app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.generator.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.flask_app.executor": "Run",
+    "Python.generator.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/laure/Documents/TeacherPlanner/TeacherPlanner/static/images"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\laure\Documents\TeacherPlanner\TeacherPlanner\static\images" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.flask_app">
     <configuration name="flask_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TeacherPlanner" />
@@ -407,12 +417,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754836648121</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling.">
+      <option name="closed" value="true" />
+      <created>1754837290755</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1754837290755</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="I've begun adjusting my code to include features like buttons, etc. However, I've looked up best practices, so I have now created a base.html file and am editing my current code as I go to reflect this!" />
     <MESSAGE value="I accidentally changed the wrong file! So this is (hopefully) the correct base file," />
     <MESSAGE value="Updated weekly and styles.css files to reflect the use of the base file." />
     <MESSAGE value="Updated monthly_template.html file to reflect the use of the base file." />
@@ -437,6 +454,7 @@
     <MESSAGE value="Added the missing app call for yearly_redirect!" />
     <MESSAGE value="I've removed unnecessary redirection buttons from the home page, since I have decided to use a navigation bar at the top throughout the planner." />
     <MESSAGE value="I'm now making the planner pretty... hopefully!" />
-    <option name="LAST_COMMIT_MESSAGE" value="I'm now making the planner pretty... hopefully!" />
+    <MESSAGE value="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling." />
   </component>
 </project>

@@ -26,15 +26,14 @@
     </style>
 </head>
 <body>
+<!-- A. HERO BANNER ABOVE NAV -->
+<div class="banner banner--hero"></div>
     <nav>
         <a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a>
         <a href="{{ url_for('week_redirect') }}"><i class="fas fa-calendar-week"></i> Weekly</a>
         <a href="{{ url_for('month_redirect') }}"><i class="fas fa-calendar-alt"></i> Monthly</a>
         <a href="{{ url_for('yearly_redirect') }}"><i class="fas fa-calendar"></i> Yearly</a>
     </nav>
-
-    <!-- Banner -->
-    <div class="banner"></div>
 
     <!-- Main content container -->
     <div class="container">

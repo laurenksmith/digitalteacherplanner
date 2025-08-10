@@ -33,6 +33,26 @@
   --cat-ink:   #d8d8d8;
 }
 
+/* --- Top Doodle Banner --- */
+.banner {
+  background-image: url('/static/images/banner.png');
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+  height: 140px; /* adjust height to taste */
+  opacity: 0.15; /* subtle! */
+  pointer-events: none; /* clickable stuff below stays usable */
+}
+
+/* Optional: give content a little breathing room below banner */
+.banner + .container {
+  margin-top: -60px; /* lifts content into the banner area */
+  background: var(--bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
 /* ------------------------------------------------------------------
    Base layout
 ------------------------------------------------------------------ */
