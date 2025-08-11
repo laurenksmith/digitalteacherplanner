@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Attempting to align my notes text box with the other text boxes on the home page.">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Something has happened to my font - playing around trying to get it back!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -438,12 +438,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754849741836</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Something has happened to my font - playing around trying to get it back!">
+      <option name="closed" value="true" />
+      <created>1754850601169</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1754850601169</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated monthly_template.html file to reflect the use of the base file." />
     <MESSAGE value="I have updated the flask_app.py and index.html files and created a yearly.html file too." />
     <MESSAGE value="I had an error when I tried to run the flask_app.py file - it seems to be with the use of datetime for Jinja. Hopefully these changes will work!" />
     <MESSAGE value="Debugging! I confused things with my use of events and all my changes, but I seem to have fixed it now." />
@@ -468,6 +475,7 @@
     <MESSAGE value="Getting there! I'm now working on spacing etc to try make it look professionaly and appealling." />
     <MESSAGE value="I've tried to add a banner at the tio of the homepage to make it more visually appealing." />
     <MESSAGE value="Attempting to align my notes text box with the other text boxes on the home page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempting to align my notes text box with the other text boxes on the home page." />
+    <MESSAGE value="Something has happened to my font - playing around trying to get it back!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Something has happened to my font - playing around trying to get it back!" />
   </component>
 </project>
