@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Something has happened to my font - playing around trying to get it back!">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Editing my index.html file to make the code more consistent.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -446,12 +448,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754850601169</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Editing my index.html file to make the code more consistent.">
+      <option name="closed" value="true" />
+      <created>1754941391342</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1754941391342</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="I have updated the flask_app.py and index.html files and created a yearly.html file too." />
     <MESSAGE value="I had an error when I tried to run the flask_app.py file - it seems to be with the use of datetime for Jinja. Hopefully these changes will work!" />
     <MESSAGE value="Debugging! I confused things with my use of events and all my changes, but I seem to have fixed it now." />
     <MESSAGE value="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!" />
@@ -476,6 +485,7 @@
     <MESSAGE value="I've tried to add a banner at the tio of the homepage to make it more visually appealing." />
     <MESSAGE value="Attempting to align my notes text box with the other text boxes on the home page." />
     <MESSAGE value="Something has happened to my font - playing around trying to get it back!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Something has happened to my font - playing around trying to get it back!" />
+    <MESSAGE value="Editing my index.html file to make the code more consistent." />
+    <option name="LAST_COMMIT_MESSAGE" value="Editing my index.html file to make the code more consistent." />
   </component>
 </project>

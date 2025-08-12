@@ -6,23 +6,24 @@
 <h1>My Weekly Planner</h1>
 
 <div class="toolbar">
-<form method="POST" action="/add">
+  <form method="POST" action="{{ url_for('add_event') }}">
     <input type="text" name="title" placeholder="Event title" required />
     <input type="date" name="date" required />
     <textarea name="notes" placeholder="Notes..."></textarea>
     <button type="submit" class="btn">Add Event</button>
-</form>
+  </form>
 </div>
 
-<h2>Events</h2>
+<h2 class="section-title">Events</h2>
 {% for event in events %}
-    <div class="event">
-        <strong>{{ event.title }}</strong><br>
-        <em>{{ event.date }}</em><br>
-        <p>{{ event.notes }}</p>
-        <a href="{{ url_for('edit_event', event_id=event.id) }}">Edit</a> |
-        <a href="{{ url_for('delete_event', event_id=event.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
+  <div class="event">
+    <strong>{{ event.title }}</strong><br>
+    <em>{{ event.date }}</em><br>
+    <p>{{ event.notes }}</p>
+    <div class="actions">
+      <a href="{{ url_for('edit_event', event_id=event.id) }}">Edit</a>
+      <a href="{{ url_for('delete_event', event_id=event.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
     </div>
+  </div>
 {% endfor %}
-
 {% endblock %}

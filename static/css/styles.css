@@ -42,6 +42,17 @@
   pointer-events: none; /* clickable stuff below stays usable */
 }
 
+/* Center the heading inside the banner */
+.banner h1 {
+  margin: 0;
+  line-height: 140px; /* same as banner height */
+  text-align: center;
+  font-size: clamp(28px, 4vw, 44px);
+  color: var(--text);
+  position: relative;
+  z-index: 1; /* sits above background */
+}
+
 /* Optional: give content a little breathing room below banner */
 .banner + .container {
   margin-top: -60px; /* lifts content into the banner area */
@@ -328,4 +339,15 @@ textarea:focus {
   border-radius: 12px;
   padding: 16px;
   background: #fff;
+}
+
+/* ------------------------------------------------------------------
+   Quick visual polish
+------------------------------------------------------------------ */
+h1 {
+  margin-bottom: 12px;
+}
+
+.toolbar textarea {
+  min-height: 44px; /* slightly taller for better visual balance */
 }
