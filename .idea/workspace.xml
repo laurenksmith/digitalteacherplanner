@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="Editing my index.html file to make the code more consistent.">
+    <list default="true" id="c8eb4c57-a5c0-4012-8222-1fbd4fa1cad3" name="Changes" comment="The heading on the homepage has moved; I am now working on putting it neatly at the top - I shall try centre it inside the banner, to see how that looks.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
@@ -456,12 +456,19 @@
       <option name="project" value="LOCAL" />
       <updated>1754941391342</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="The heading on the homepage has moved; I am now working on putting it neatly at the top - I shall try centre it inside the banner, to see how that looks.">
+      <option name="closed" value="true" />
+      <created>1755001201517</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1755001201517</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="I had an error when I tried to run the flask_app.py file - it seems to be with the use of datetime for Jinja. Hopefully these changes will work!" />
     <MESSAGE value="Debugging! I confused things with my use of events and all my changes, but I seem to have fixed it now." />
     <MESSAGE value="Committing my changes - monthly view is still not working and I need to continue debugging - tomorrow!" />
     <MESSAGE value="Continuing to debug and try work out why the monthly view is still not working." />
@@ -486,6 +493,7 @@
     <MESSAGE value="Attempting to align my notes text box with the other text boxes on the home page." />
     <MESSAGE value="Something has happened to my font - playing around trying to get it back!" />
     <MESSAGE value="Editing my index.html file to make the code more consistent." />
-    <option name="LAST_COMMIT_MESSAGE" value="Editing my index.html file to make the code more consistent." />
+    <MESSAGE value="The heading on the homepage has moved; I am now working on putting it neatly at the top - I shall try centre it inside the banner, to see how that looks." />
+    <option name="LAST_COMMIT_MESSAGE" value="The heading on the homepage has moved; I am now working on putting it neatly at the top - I shall try centre it inside the banner, to see how that looks." />
   </component>
 </project>
